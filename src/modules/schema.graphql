@@ -1,7 +1,4 @@
-type Temp {
-  temp: String
-}
-
-type Query {
-  doTemp: Temp
+type Delete {
+  acknowledged: Boolean
+  deletedCount: Int
 }
