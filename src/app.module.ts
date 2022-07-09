@@ -3,7 +3,12 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { GraphQLModule } from '@nestjs/graphql';
 import { join } from 'path';
+import { AlbumsModule } from './modules/albums/albums.module';
+import { ArtistsModule } from './modules/artists/artitsts.module';
+import { BandsModule } from './modules/bands/bands.module';
+import { FavouritesModule } from './modules/favourites/favourites.module';
 import { GenresModule } from './modules/genres/genres.module';
+import { TracksModule } from './modules/tracks/tracks.module';
 import { UsersModule } from './modules/users/users.module';
 
 @Module({
@@ -30,6 +35,11 @@ import { UsersModule } from './modules/users/users.module';
     }),
     UsersModule,
     GenresModule,
+    BandsModule,
+    ArtistsModule,
+    AlbumsModule,
+    TracksModule,
+    FavouritesModule,
   ],
 })
 export class AppModule {}
