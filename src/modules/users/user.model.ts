@@ -5,3 +5,11 @@ export interface UserResponse {
   email: string;
   _id: string;
 }
+
+export interface ConfigContext {
+  config: {
+    headers: {
+      Authorization: string;
+    };
+  };
+}

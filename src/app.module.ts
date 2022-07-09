@@ -3,6 +3,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { GraphQLModule } from '@nestjs/graphql';
 import { join } from 'path';
+import { GenresModule } from './modules/genres/genres.module';
 import { UsersModule } from './modules/users/users.module';
 
 @Module({
@@ -28,6 +29,7 @@ import { UsersModule } from './modules/users/users.module';
       },
     }),
     UsersModule,
+    GenresModule,
   ],
 })
 export class AppModule {}
