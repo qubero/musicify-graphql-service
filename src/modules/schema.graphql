@@ -1,0 +1,7 @@
+type Temp {
+  temp: String
+}
+
+type Query {
+  doTemp: Temp
+}
