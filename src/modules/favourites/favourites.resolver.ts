@@ -122,7 +122,7 @@ export class FavouritesResolver {
   ) {
     return this.favouritesService.addToFavourites<FavouritesResponse>(
       addToFavouritesData,
-      'favourites',
+      'tracks',
       ctx,
     );
   }

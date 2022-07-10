@@ -89,10 +89,10 @@ export class AlbumsResolver {
 
   @Mutation('createAlbum')
   async create(
-    @Args('createAlbumData') createAlbumData: CreateAlbumInput,
+    @Args('createAlbumInput') createAlbumInput: CreateAlbumInput,
     @Context() ctx: ConfigContext,
   ) {
-    return this.albumsService.create(createAlbumData, ctx);
+    return this.albumsService.create(createAlbumInput, ctx);
   }
 
   @Mutation('updateAlbum')
